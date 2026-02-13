@@ -3,15 +3,17 @@
 - Faculdade: IADE  
 - Elementos do grupo: Rodrigo Canto, Rodrigo Daibert, Marco Fonseca e Daniel Paulo
 - Nome do projeto: VITRA – Vigilância Inteligente do Território e Riscos Ambientais
-- Repositório GitHub:
+- Repositório GitHub: 
   
 ---
 
 # 2. Distribuição das principais tarefas
 
-| **Tarefas Principais** | **Rodrigo Canto**| **Rodrigo Daibert** | **Marco Fonseca** | **Dinael Paulo** | **Total** |
+| **Tarefas Principais** | **Rodrigo Canto**| **Rodrigo Daibert** | **Marco Fonseca** | **Daniel Paulo** | **Total** |
 |----------------------|-------------------|----------------------|-------------------|------------------|-----------|
-| **1. Relatorio** | 25% | 25% | 25% | 25% | **100%** |
+| **1. Relatorio(Proposta inicial)** | 25% | 25% | 25% | 25% | **100%** |
+
+---
 
 ## 3. Proposta inicial
 
@@ -36,11 +38,41 @@ Entre os principais benefícios do projeto destacam-se a redução do tempo de r
 
 ## 4. Objetivos e probelmas a resolver
 
+### 4.1. Objetivos
+
+- Desenvolver um sistema web inteligente de monitorização ambiental.
+- Recolher dados em tempo real através de sensores distribuídos geograficamente.
+- Detetar situações de risco relacionadas com cheias, incêndios e radiação.
+- Analisar tendências e taxas de variação para antecipar eventos críticos.
+- Emitir alertas automáticos às entidades competentes.
+- Disponibilizar um painel de controlo com mapa interativo e histórico de dados.
+- Apoiar a tomada de decisão com base em dados atualizados e previsões simplificadas.
+- Garantir escalabilidade para integração futura de novos sensores e funcionalidades.
+
+---
+
+### 4.2. Problemas a Resolver
+
+- Ausência de monitorização contínua em zonas críticas.
+- Demora na deteção e comunicação de situações de risco.
+- Dependência de sistemas isolados e não integrados.
+- Falta de análise preditiva baseada em tendência e evolução do risco.
+- Elevado número de falsos positivos em sistemas simples de alerta.
+- Dificuldade de acesso centralizado a dados históricos e em tempo real.
+- Tempo de resposta reduzido das autoridades devido à falta de informação estruturada.
 
 ---
 
 ## 5. Público-alvo
 
+- Autoridades municipais e câmaras municipais.
+- Serviços municipais de proteção civil.
+- Bombeiros e forças de segurança.
+- Entidades responsáveis pela gestão de barragens e recursos hídricos.
+- Instituições governamentais ligadas ao ambiente e segurança.
+- Empresas industriais localizadas em zonas de risco.
+- Organizações de gestão florestal.
+- Técnicos e decisores na área da gestão de emergências.
 
 ---
 
@@ -84,20 +116,20 @@ Entre os principais benefícios do projeto destacam-se a redução do tempo de r
 
 ## 7. Guiões de teste
 
-
 ---
 
 ## 8. Project Charter
-Project Charter: EcoMonitor PT
-Sistema de Monitorização Ambiental e Alerta Precoce
+Project Charter: VITRA
+Vigilância Inteligente do Território e Riscos Ambientais
 
 Enquadramento das Unidades Curriculares:
 Programação Web: Esta UC é o motor técnico do EcoMonitor PT. Permite implementar funcionalidades dinâmicas (JS) e a lógica de servidor (PHP) necessária para processar as leituras dos sensores em tempo real e gerir a base de dados MySQL.
 
 Estatística: Crucial para o rigor dos alertas. Através desta UC, o sistema analisa séries temporais de dados, identifica outliers (leituras falsas dos sensores) e calcula médias de poluição ou precipitação para gerar previsões de risco fiáveis
 
----
+Sistema de Informações Geograficos: Utiliza dados georreferenciados provenientes de sensores distribuídos no território e por recorrer a mapas interativos para visualização e análise espacial. A plataforma aplica conceitos de georreferenciação, análise espacial e monitorização territorial em tempo real, apoiando a tomada de decisão com base em informação geográfica.
 
+---
 
 ## 9 WBS (Work Breakdown Structure)
 1. Início: Project Charter e Definição de Requisitos - Documento de Especificação
