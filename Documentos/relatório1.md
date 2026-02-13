@@ -2,7 +2,7 @@
 - Universidade: Universidade Europeia  
 - Faculdade: IADE  
 - Elementos do grupo: Rodrigo Canto, Rodrigo Daibert, Marco Fonseca e Daniel Paulo
-- Nome do projeto: EcoMonitor PT
+- Nome do projeto: VITRA – Vigilância Inteligente do Território e Riscos Ambientais
 - Repositório GitHub: 
 ---
 
