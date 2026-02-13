@@ -3,10 +3,17 @@
 - Faculdade: IADE  
 - Elementos do grupo: Rodrigo Canto, Rodrigo Daibert, Marco Fonseca e Daniel Paulo
 - Nome do projeto: VITRA – Vigilância Inteligente do Território e Riscos Ambientais
-- Repositório GitHub: 
+- Repositório GitHub:
+  
 ---
 
-## 2. Proposta inicial
+# 2. Distribuição das principais tarefas
+
+| **Tarefas Principais** | **Rodrigo Canto**| **Rodrigo Daibert** | **Marco Fonseca** | **Dinael Paulo** | **Total** |
+|----------------------|-------------------|----------------------|-------------------|------------------|-----------|
+| **1. Relatorio** | 25% | 25% | 25% | 25% | **100%** |
+
+## 3. Proposta inicial
 
 O presente projeto tem como objetivo o desenvolvimento de um sistema web inteligente de monitorização ambiental, capaz de recolher dados em tempo real através de sensores instalados em zonas críticas e emitir alertas automáticos às autoridades competentes sempre que forem detetadas situações de risco. A plataforma pretende atuar principalmente na prevenção e suavização de três tipos de ameaças ambientais: cheias e inundações, incêndios florestais e níveis anormais de radiação.
 Atualmente, fenómenos naturais extremos e incidentes ambientais representam riscos significativos para populações, infraestruturas, ecossistemas e atividades económicas. Muitas vezes, a resposta das autoridades é condicionada pela ausência de sistemas de monitorização contínua, pela demora na comunicação de alertas ou pela falta de ferramentas de previsão da evolução do risco. Assim, torna-se essencial desenvolver uma solução integrada que permita não apenas detetar situações perigosas, mas também antecipar a sua progressão e apoiar a tomada de decisão.
@@ -15,52 +22,19 @@ O sistema proposto baseia-se na utilização de sensores distribuídos geografic
 
 No que diz respeito à monitorização de cheias, serão utilizados sensores de nível de água e, opcionalmente, sensores de caudal e precipitação. O sistema não se limitará a verificar se um determinado valor ultrapassa um limite fixo, mas analisará também a taxa de subida do nível da água. Um aumento rápido num curto espaço de tempo poderá indicar um risco iminente, mesmo antes de ser atingido o nível máximo de segurança. Desta forma, os alertas poderão ser classificados por níveis de severidade (por exemplo: verde, amarelo, laranja e vermelho), permitindo uma resposta proporcional à gravidade da situação.
 
-
-
-
-
-
-
-
 Relativamente à deteção de incêndios florestais, o sistema recorrerá a sensores de CO₂, sensores de fumo e sensores de temperatura, podendo também integrar dados meteorológicos como velocidade e direção do vento. A deteção será baseada na combinação de múltiplos parâmetros, reduzindo assim a probabilidade de falsos positivos. Por exemplo, um aumento de temperatura isolado poderá não ser suficiente para gerar um alerta, mas a combinação de temperatura elevada, aumento de CO₂ e presença de vento forte poderá indicar um risco real de ignição ou propagação.
 Além da deteção, o sistema incluirá um módulo simples de previsão da propagação do incêndio. Essa previsão terá como base fatores como a velocidade e direção do vento, a inclinação do terreno e a distância até pontos críticos previamente definidos (por exemplo, aldeias ou infraestruturas sensíveis). Através de um cálculo simplificado da velocidade estimada de propagação, será possível determinar o tempo aproximado que o incêndio poderá demorar a atingir determinadas áreas, fornecendo assim uma ferramenta adicional de apoio à decisão.
 
-
-
-
-
-
-
-
 No que se refere à monitorização de radiação, serão utilizados sensores capazes de medir a dose de radiação ambiente. O sistema gerará alertas sempre que os valores ultrapassarem níveis considerados seguros ou quando for detetado um aumento súbito anormal. Tal funcionalidade poderá ser particularmente relevante em zonas industriais, próximas de instalações específicas ou em situações de emergência ambiental.
-
-
-
-
-
-
 
 A plataforma web disponibilizará um painel de controlo com mapa interativo, onde todos os sensores serão representados visualmente, com indicação do seu estado atual através de um sistema de cores. Os utilizadores autorizados poderão consultar incidentes ativos, visualizar o histórico de leituras, analisar gráficos de evolução e acompanhar em tempo real a progressão de cada evento. O sistema incluirá ainda um módulo de gestão de alertas, permitindo configurar destinatários e meios de comunicação, como email, SMS ou integração com sistemas municipais.
 Em termos de arquitetura, o sistema será composto por quatro componentes principais: os sensores instalados em campo, o servidor backend responsável por receber e processar os dados, a base de dados para armazenamento histórico e a interface web para visualização e gestão. O fluxo de funcionamento será estruturado da seguinte forma: o sensor envia a leitura, o servidor valida e analisa os dados, aplica as regras de decisão, cria um incidente caso necessário e envia automaticamente os alertas definidos.
 
 Entre os principais benefícios do projeto destacam-se a redução do tempo de resposta a emergências, o apoio à tomada de decisão por parte das autoridades, a prevenção de danos materiais e humanos e a possibilidade de monitorização contínua, 24 horas por dia. Além disso, o sistema será concebido de forma modular e escalável, permitindo no futuro a integração de novos tipos de sensores ou funcionalidades adicionais.
 
-
-
-
-
-
-
-
-
-
 ---
 
-## 3. Descrição da app e problemas a resolver
-
----
-
-## 4. Objetivos e motivação
+## 4. Objetivos e probelmas a resolver
 
 
 ---
@@ -125,7 +99,7 @@ Estatística: Crucial para o rigor dos alertas. Através desta UC, o sistema ana
 ---
 
 
-### 9 WBS (Work Breakdown Structure)
+## 9 WBS (Work Breakdown Structure)
 1. Início: Project Charter e Definição de Requisitos - Documento de Especificação
 2. Arquitetura: Modelo da BD MySQL e Estrutura de Pastas - Esquema ER da Base de Dados
 3. Backend (PHP): Conexão DB e Script simulador de sensores - API de Dados (JSON)
@@ -137,6 +111,7 @@ Estatística: Crucial para o rigor dos alertas. Através desta UC, o sistema ana
 
 ## 10. Conclusão
 
+---
 
 ## 11. Bibliografia
 
