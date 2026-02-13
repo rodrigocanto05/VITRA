@@ -72,33 +72,39 @@ Entre os principais benefícios do projeto destacam-se a redução do tempo de r
 
 ## 6. Pesquisa de mercado
 
-### AnyList
+### IPMA
 | 🟢 Semelhanças | 🔴 Diferenças |
 |---|---|
-| Partilha de listas entre membros | Não mostra supermercados próximos nem rotas |
-| Sincronização em tempo real | Não gera ingredientes e quantidades a partir de refeições |
-| Planeamento de refeições | - |
+| Monitorização meteorológica nacional | Não utiliza rede comunitária de sensores |
+| Sistema de alertas por cores | Interface pouco interativa |
+| Dados em tempo real | Não apresenta previsão baseada em taxa de variação |
 
-### Bring!
-| 🟢 Semelhanças | 🔴 Diferenças |
-|---|---|
-| Listas de compras partilhadas | Não mostra supermercados próximos nem rotas |
-| Sugestões de receitas | Não calcula quantidades relativas |
-| Organização por categorias | - |
+---
 
-### Listonic
+### USGS
 | 🟢 Semelhanças | 🔴 Diferenças |
 |---|---|
-| Listas partilhadas | Não sugere refeições completas |
-| Sugestões de produtos | Não apresenta rotas até supermercados |
-| Organização clara | - |
+| Monitorização de níveis de água | Interface técnica e pouco intuitiva |
+| Histórico de leituras | Não integra incêndios e radiação num único sistema |
+| Mapa interativo com sensores | Não possui sistema de previsão simplificada |
 
-### SuperCook
+---
+
+### NASA FIRMS
 | 🟢 Semelhanças | 🔴 Diferenças |
 |---|---|
-| Sugere refeições com base nos ingredientes | Não tem lista de compras colaborativa |
-| Evita desperdício alimentar | Não mostra supermercados próximos |
-| Gestão de stock | Não apresenta rotas no mapa |
+| Deteção de incêndios em tempo real | Baseado maioritariamente em satélite |
+| Visualização geográfica | Não utiliza sensores terrestres locais |
+| Monitorização contínua | Não integra sistema de alertas municipais personalizados |
+
+---
+
+### EURDEP
+| 🟢 Semelhanças | 🔴 Diferenças |
+|---|---|
+| Monitorização de níveis de radiação | Interface pouco moderna |
+| Dados distribuídos geograficamente | Não integra múltiplas ameaças ambientais |
+| Sistema europeu de partilha de dados | Não apresenta previsão de evolução do risco |
 
 ---
 
