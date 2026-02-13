@@ -122,12 +122,12 @@ Entre os principais benefícios do projeto destacam-se a redução do tempo de r
 Project Charter: VITRA
 Vigilância Inteligente do Território e Riscos Ambientais
 
-Enquadramento das Unidades Curriculares:
-Programação Web: Esta UC é o motor técnico do EcoMonitor PT. Permite implementar funcionalidades dinâmicas (JS) e a lógica de servidor (PHP) necessária para processar as leituras dos sensores em tempo real e gerir a base de dados MySQL.
+*Enquadramento das Unidades Curriculares*:
+**Programação Web**: Esta UC é o motor técnico do EcoMonitor PT. Permite implementar funcionalidades dinâmicas (JS) e a lógica de servidor (PHP) necessária para processar as leituras dos sensores em tempo real e gerir a base de dados MySQL.
 
-Estatística: Crucial para o rigor dos alertas. Através desta UC, o sistema analisa séries temporais de dados, identifica outliers (leituras falsas dos sensores) e calcula médias de poluição ou precipitação para gerar previsões de risco fiáveis
+**Estatística**: Crucial para o rigor dos alertas. Através desta UC, o sistema analisa séries temporais de dados, identifica outliers (leituras falsas dos sensores) e calcula médias de poluição ou precipitação para gerar previsões de risco fiáveis
 
-Sistema de Informações Geograficos: Utiliza dados georreferenciados provenientes de sensores distribuídos no território e por recorrer a mapas interativos para visualização e análise espacial. A plataforma aplica conceitos de georreferenciação, análise espacial e monitorização territorial em tempo real, apoiando a tomada de decisão com base em informação geográfica.
+**Sistema de Informações Geograficos**: Utiliza dados georreferenciados provenientes de sensores distribuídos no território e por recorrer a mapas interativos para visualização e análise espacial. A plataforma aplica conceitos de georreferenciação, análise espacial e monitorização territorial em tempo real, apoiando a tomada de decisão com base em informação geográfica.
 
 ---
 
