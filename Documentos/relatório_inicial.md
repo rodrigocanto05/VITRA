@@ -295,6 +295,8 @@ Vigilância Inteligente do Território e Riscos Ambientais
 
 **Algoritmo e Estrutura de dados**: O nosso projeto enquadra-se na cadeira de Algoritmos e Estruturas de Dados porque aplica a organização e estruturação de dados provenientes de sensores, utilizando algoritmos para processar informação e gerar alertas. Além disso, recorre a estruturas de dados e ao paradigma de programação orientada a objetos, conforme abordado nos conteúdos da unidade curricular.
 
+**Interfaces e Usabilidades**: O projeto vai ser influênciado gráficamente pela cadeira de interfaces e usabilidades, representado todo o frontend, e organizando as usabilidades e a estética da interface de utilizadores, para que a mesma seja mais eficiente, e de fácil utilização, desenvolvendo temas sobre as diferentes usabilidades.
+
 
 ---
 
