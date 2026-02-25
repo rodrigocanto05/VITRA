@@ -282,12 +282,30 @@ Vigilância Inteligente do Território e Riscos Ambientais
 ---
 
 ## 🏗️ 10. WBS (Work Breakdown Structure)
-1. Início: Project Charter e Definição de Requisitos - Documento de Especificação
-2. Arquitetura: Modelo da BD MySQL e Estrutura de Pastas - Esquema ER da Base de Dados
-3. Backend (PHP): Conexão DB e Script simulador de sensores - API de Dados (JSON)
-4. Frontend: Layout HTML/CSS e Mapa de Portugal (SVG/JS) - Interface Dashboard
-5. Integração: Consumo de dados via Fetch e Lógica de Alertas - Sistema Dinâmico
-6. Testes. Testes de stress e alidação estatística - Relatório de Testes
+1) Gestão do Projeto
+   1.1 - Documentação técnica e Project Charter.
+   1.2 - Planeamento de Sprint e prazos.
+2) Desenvolvimento Core
+   2.1 - Configuração do ambiente e Router em PHP.
+   2.2 - Motor de Autenticação (Sessions & Password Hashing).
+3) Módulo de Leilões
+   3.1 - CRUD de Produtos.
+   3.2 - Lógica de Licitação e Cronómetros (AJAX).
+4) Backend (PHP)
+   4.1 - Conexão DB e Script simulador de sensores - API de Dados (JSON)
+5) Frontend:
+   5.1 - Layout HTML/CSS 
+6) Módulo Casino:
+   6.1 - Algoritmos de Slots e Roleta.
+   6.2 - Flip Coin e outros possiveis métodos
+7) Integração
+   7.1 - Consumo de dados via Fetch e Lógica 
+8) Módulo SIG (Geosocial)
+   8.1 - Integração com Leaflet.js.
+   8.2 - Geocodificação de endereços de vendedores.
+9) Segurança e Testes
+    9.1 - Sanitização de inputs e prevenção de XSS/SQLi.
+    9.2 - Testes unitários de lógica de saldo.
 
 ---
 
