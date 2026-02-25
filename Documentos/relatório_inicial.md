@@ -30,30 +30,16 @@ Este projeto pretende demonstrar como a integração de sensores, algoritmos e e
 
 ---
 
-## 🎯 4. Objetivos e probelmas a resolver
+## 🎯 4. Objetivos
 
-### 4.1. Objetivos
-
-- Desenvolver um sistema web inteligente de monitorização ambiental.
-- Recolher dados em tempo real através de sensores distribuídos geograficamente.
-- Detetar situações de risco relacionadas com cheias, incêndios e radiação.
-- Analisar tendências e taxas de variação para antecipar eventos críticos.
-- Emitir alertas automáticos às entidades competentes.
-- Disponibilizar um painel de controlo com mapa interativo e histórico de dados.
-- Apoiar a tomada de decisão com base em dados atualizados e previsões simplificadas.
-- Garantir escalabilidade para integração futura de novos sensores e funcionalidades.
-
----
-
-### 4.2. Problemas a Resolver
-
-- Ausência de monitorização contínua em zonas críticas.
-- Demora na deteção e comunicação de situações de risco.
-- Dependência de sistemas isolados e não integrados.
-- Falta de análise preditiva baseada em tendência e evolução do risco.
-- Elevado número de falsos positivos em sistemas simples de alerta.
-- Dificuldade de acesso centralizado a dados históricos e em tempo real.
-- Tempo de resposta reduzido das autoridades devido à falta de informação estruturada.
+- Criar uma plataforma de leilões inovadora que permita comprar e vender produtos de forma dinâmica e interativa.
+- Permitir que qualquer produto possa ser leiloado e que o maior lance seja o vencedor.
+- Implementar desempate por sorteio (moeda ao ar) em caso de empate nos lances.
+- Introduzir uma roleta diária com prémios de baixo valor ou pequenas chances de ganhar, incentivando visitas frequentes.
+- Desenvolver uma mecânica de “caça ao tesouro” onde produtos são colocados aleatoriamente no mapa e o primeiro a chegar fisicamente recebe o produto.
+- Integrar geolocalização para definir a localização dos produtos e facilitar a entrega pelos vendedores.
+- Garantir que os produtos possam ser entregues presencialmente ou enviados com segurança ao comprador.
+- Oferecer uma experiência de utilizador envolvente, interativa e segura, promovendo competição e engajamento contínuo.
 
 ---
 
@@ -220,53 +206,48 @@ Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do
 
 ## 👥 6. Público-alvo
 
-- Autoridades municipais e câmaras municipais.
-- Serviços municipais de proteção civil.
-- Bombeiros e forças de segurança.
-- Entidades responsáveis pela gestão de barragens e recursos hídricos.
-- Instituições governamentais ligadas ao ambiente e segurança.
-- Empresas industriais localizadas em zonas de risco.
-- Organizações de gestão florestal.
-- Técnicos e decisores na área da gestão de emergências.
+- Jovens
+- Adultos
+- Jogadores / fãs de gamificação
+- Vendedores casuais / pequenos comerciantes
 
 ---
 
 ## 🔍 7. Pesquisa de mercado
 
-### IPMA
+### eBay
 | 🟢 Semelhanças | 🔴 Diferenças |
 |---|---|
-| Monitorização meteorológica nacional | Não utiliza rede comunitária de sensores |
-| Sistema de alertas por cores | Interface pouco interativa |
-| Dados em tempo real | Não apresenta previsão baseada em taxa de variação |
+| Plataforma de leilões online | Não possui roleta diária ou caça ao tesouro |
+| Permite vender qualquer produto | Não utiliza geolocalização para entrega presencial |
+| Sistema de lances competitivos | Não resolve empates por sorteio |
 
 ---
 
-### USGS
+### Mercado Livre
 | 🟢 Semelhanças | 🔴 Diferenças |
 |---|---|
-| Monitorização de níveis de água | Interface técnica e pouco intuitiva |
-| Histórico de leituras | Não integra incêndios e radiação num único sistema |
-| Mapa interativo com sensores | Não possui sistema de previsão simplificada |
+| Venda de produtos variados | Não possui mecânicas de gamificação como roleta ou caça ao tesouro |
+| Permite contacto entre comprador e vendedor | Entrega tradicional, sem geolocalização para jogos interativos |
+| Plataforma popular na América Latina | Não tem desempate por sorteio em lances empatados |
 
 ---
 
-### NASA FIRMS
+### DealDash
 | 🟢 Semelhanças | 🔴 Diferenças |
 |---|---|
-| Deteção de incêndios em tempo real | Baseado maioritariamente em satélite |
-| Visualização geográfica | Não utiliza sensores terrestres locais |
-| Monitorização contínua | Não integra sistema de alertas municipais personalizados |
+| Sistema de leilões por lances | Não integra caça ao tesouro ou geolocalização |
+| Produtos variados | Não oferece roleta diária ou prémios surpresa |
+| Incentiva participação frequente | Empates não resolvidos por sorteio, lances continuam até final definido |
 
 ---
 
-### EURDEP
+### ShopGun / Local Auctions
 | 🟢 Semelhanças | 🔴 Diferenças |
 |---|---|
-| Monitorização de níveis de radiação | Interface pouco moderna |
-| Dados distribuídos geograficamente | Não integra múltiplas ameaças ambientais |
-| Sistema europeu de partilha de dados | Não apresenta previsão de evolução do risco |
-
+| Combina compras online com elementos locais | Menor variedade de produtos leiloados |
+| Alguns usam geolocalização para entregas | Não possui caça ao tesouro ou roleta diária |
+| Interação entre vendedor e comprador | Não tem desempates decididos por sorteio |
 ---
 
 ## 🧪 8. Guiões de teste
@@ -289,7 +270,7 @@ Vigilância Inteligente do Território e Riscos Ambientais
 
 **Estatística**: Crucial para o rigor dos alertas. Através desta UC, o sistema analisa séries temporais de dados, identifica outliers (leituras falsas dos sensores) e calcula médias de poluição ou precipitação para gerar previsões de risco fiáveis
 
-**Sistema de Informações Geograficos**: Utiliza dados georreferenciados provenientes de sensores distribuídos no território e por recorrer a mapas interativos para visualização e análise espacial. A plataforma aplica conceitos de georreferenciação, análise espacial e monitorização territorial em tempo real, apoiando a tomada de decisão com base em informação geográfica.
+**Sistema de Informação Geográfica**: No contexto do site de leilões, utiliza dados georreferenciados para localizar produtos e utilizadores, permitindo funcionalidades como a caça ao tesouro e entregas presenciais. Recorre a mapas interativos para visualização e análise espacial, aplicando conceitos de georreferenciação e monitorização em tempo real. Apoia a experiência do utilizador e a tomada de decisão baseada em localização geográfica.
 
 **Projeto de Desenvolvimento Web**: É nesta cadeira que vamos desenvolver o projeto, iremos ter acompanhamento da professora e as apresentações.
 
@@ -320,12 +301,12 @@ Vigilância Inteligente do Território e Riscos Ambientais
 ---
 
 ## 📚 12. Bibliografia
-**IPMA** (Instituto Português do Mar e da Atmosfera) — Padrões de alerta e escalas de severidade meteorológica.
 
-**USGS** (United States Geological Survey) — Modelos de monitorização de caudais e níveis hídricos.
+eBay. (n.d.). *eBay: Buy & Sell Electronics, Cars, Fashion, Collectibles & More*. https://www.ebay.com
 
-**NASA FIRMS** — Sistemas de deteção de focos de incêndio via satélite e sensores terrestres.
+Mercado Livre. (n.d.). *Mercado Livre: Compra y Venta de Productos Online*. https://www.mercadolibre.com
 
-**EURDEP** (European Radiological Data Exchange Platform) — Normas de monitorização e partilha de dados radiológicos.
+DealDash. (n.d.). *DealDash: The Online Auction Site with the Lowest Prices*. https://www.dealdash.com
 
-**Documentação Técnica** — Referências de implementação em PHP, MySQL e integração de mapas com Leaflet.js.
+ShopGun. (n.d.). *ShopGun: Local Shopping and Auctions*. https://www.shopgun.com
+
