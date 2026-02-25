@@ -266,9 +266,11 @@ Vigilância Inteligente do Território e Riscos Ambientais
 
 **Enquadramento das Unidades Curriculares**:
 
-**Programação Web**: Esta UC é o motor técnico do EcoMonitor PT. Permite implementar funcionalidades dinâmicas (JS) e a lógica de servidor (PHP) necessária para processar as leituras dos sensores em tempo real e gerir a base de dados MySQL.
+**Programação Web**: EO PHP será o responsável por implementar as fórmulas matemáticas e garantir que os dados geográficos (Coordenadas x,y) sejam processados e entregues ao Front-end em formato JSON para o Leaflet.
 
-**Estatística**: Crucial para o rigor dos alertas. Através desta UC, o sistema analisa séries temporais de dados, identifica outliers (leituras falsas dos sensores) e calcula médias de poluição ou precipitação para gerar previsões de risco fiáveis
+**Estatística**: Análise de Tendências: Usarás estatística descritiva para mostrar ao utilizador o "Preço Médio" de produtos similares ou a "Procura" (número de licitações por hora).
+
+Análise de Outliers: Identificar licitações fraudulentas (bots) através de desvios padrão no tempo de resposta das licitações.
 
 **Sistema de Informação Geográfica**: No contexto do site de leilões, utiliza dados georreferenciados para localizar produtos e utilizadores, permitindo funcionalidades como a caça ao tesouro e entregas presenciais. Recorre a mapas interativos para visualização e análise espacial, aplicando conceitos de georreferenciação e monitorização em tempo real. Apoia a experiência do utilizador e a tomada de decisão baseada em localização geográfica.
 
