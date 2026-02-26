@@ -2,7 +2,7 @@
 - Universidade: Universidade Europeia  
 - Faculdade: IADE  
 - Elementos do grupo: Rodrigo Canto, Rodrigo Daibert, Marco Fonseca e Daniel Paulo
-- Nome do projeto: VITRA – Vigilância Inteligente do Território e Riscos Ambientais
+- Nome do projeto: 
 - Repositório GitHub: https://github.com/rodrigocanto05/VITRA
   
 ---
@@ -17,16 +17,11 @@
 
 ## 💡 3. Proposta inicial
 
-
-O presente projeto visa o desenvolvimento de um sistema web inteligente capaz de monitorizar, em tempo real, dados recolhidos por sensores instalados em zonas críticas. O objetivo é detetar situações de risco e emitir alertas automáticos às autoridades, contribuindo para a prevenção e mitigação de cheias, incêndios florestais e níveis anormais de radiação.
-
-O sistema baseia-se na recolha contínua de dados ambientais (nível de água, CO₂, temperatura, radiação, entre outros), que são enviados para um servidor central onde são analisados através de regras e algoritmos definidos. Sempre que são ultrapassados determinados limites ou identificadas variações anormais, é criado automaticamente um incidente e enviado um alerta com o respetivo nível de severidade.
-
-No caso das cheias, será analisado não apenas o valor absoluto do nível da água, mas também a sua taxa de subida. Para os incêndios, a deteção resultará da combinação de vários fatores (CO₂, temperatura e vento), incluindo uma estimativa simplificada do tempo de propagação. Na monitorização de radiação, serão gerados alertas sempre que os valores excedam níveis considerados seguros.
-
-A plataforma incluirá um painel com mapa interativo, visualização do estado dos sensores, histórico de leituras e gestão de alertas. A arquitetura do sistema será composta por sensores, servidor de processamento, base de dados e interface web.
-
-Este projeto pretende demonstrar como a integração de sensores, algoritmos e estruturas de dados pode apoiar a tomada de decisão e melhorar a resposta a situações de risco ambiental.
+O presente projeto consiste no desenvolvimento de uma plataforma web de leilões online a nível nacional, permitindo a utilizadores comprar, vender e licitar produtos de forma simples e segura. O sistema terá como objetivo criar uma experiência dinâmica, interativa e competitiva, combinando funcionalidades tradicionais de leilão com elementos de gamificação.
+A plataforma permitirá que cada produto colocado em leilão tenha localização associada, sendo visualizado num mapa interativo, facilitando a identificação geográfica do item e promovendo transparência nas transações.
+Além do sistema de licitação em tempo real, o site incluirá funcionalidades interativas, como uma roleta digital onde os utilizadores poderão girar para ganhar prémios (ex.: descontos, créditos para licitações, benefícios temporários). Será também desenvolvido um segundo jogo (a definir), com o objetivo de aumentar o envolvimento dos utilizadores e incentivar a utilização frequente da plataforma.
+O sistema incluirá gestão de utilizadores, controlo de leilões ativos, histórico de licitações, notificações automáticas e mecanismos de segurança. A arquitetura será composta por base de dados para armazenamento de utilizadores e produtos, servidor backend para gestão das regras do leilão e interface web para interação com o utilizador.
+Este projeto combina algoritmos de licitação, estruturas de dados para gestão dinâmica de ofertas e técnicas de programação orientada a objetos, aplicando conceitos da unidade curricular num contexto prático e comercial.
 
 ---
 
@@ -45,19 +40,17 @@ Este projeto pretende demonstrar como a integração de sensores, algoritmos e e
 
 ## 📅 5. Plano de Trabalhos
 
-## Sistema Web de Monitorização e Alerta de Riscos Ambientais
-
+## Leilão
 O presente plano de trabalho organiza o desenvolvimento do sistema ao longo de 13 semanas, permitindo uma evolução estruturada desde a análise inicial até à implementação final, testes e apresentação. A divisão por fases garante controlo de progresso, qualidade técnica e cumprimento de prazos.
 
 ---
 
 ## Semana 1 – Enquadramento e Definição do Projeto
 
-* Definição clara do problema e objetivos
-* Identificação dos tipos de risco a monitorizar (cheias, incêndios e radiação)
-* Pesquisa sobre sistemas semelhantes
-* Definição dos requisitos funcionais e não funcionais
-* Planeamento inicial das tarefas
+Definição completa das funcionalidades
+Escolha das tecnologias
+Modelação inicial das classes (UML)
+Definição das regras do leilão
 
 **Resultado:** Documento de requisitos aprovado.
 
