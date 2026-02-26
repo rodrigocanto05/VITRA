@@ -219,12 +219,14 @@ Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do
 ---
 
 ## 🧪 8. Guiões de teste
-| ID | Cenário de Teste |Procedimento de Execução | Resultado Esperado |
+| ID | Cenário | Procedimento | Resultado Esperado |
 |---|---|---|---|
-| 01 | Deteção de Cheia 🌊 | Inserir via base de dados uma subida de nível de água de 15cm em menos de 5 minutos | "O sistema deve calcular a taxa de variação, gerar um incidente de ""Risco Elevado"" e mudar a cor do sensor no mapa para vermelho." | 
-| 02 | Alerta de Incêndio 🔥 | Simular leitura combinada de Temperatura > 45°C e CO2 > 800ppm num sensor florestal | Cruzamento de dados bem-sucedido com a criação automática de um alerta e notificação visual no dashboard |
-| 03 | Segurança de Radiação ☢️ | Introduzir valor de radiação acima do limite de segurança definido (ex: > 0.5 µSv/h) | Disparo imediato de alerta crítico e registo do evento no histórico de incidentes para auditoria das autoridades |
-| 04 | Persistência de Dados | Simular queda de ligação do sensor e verificar o reenvio da leitura após restabelecimento | Garantir que não existem lacunas no gráfico de leituras históricas (timestamp correto) |
+| 01 | Criar Leilão | Criar produto com preço base 5€ | Produto aparece na lista de leilões ativos | 
+| 02 | Licitação válida | Utilizador licita 16€ quando valor atual do produto é 15€ | Lance aceite e atualizado para todos os restantes participantes |
+| 03 | Licitação inválida | Utilizador tenta licitar 14€ quando atual é 15€ | Sistema rejeita lance |
+| 04 | Fim automático | Aguardar tempo terminar | Sistema fecha leilão e define vencedor com a ultima licitação mais elevada |
+| 05 | Empate | Dois utilizadores licitam o mesmo valor final depois do Tempo do leilão acabar | Sistema executa sorteio **(moeda ao ar)** |
+| 06 | Geolocalização do produto leiloado | Ao ganhar o utilizador vencedor tem direito a observar o estado do seu produto em tempo real atravez de um sensor de localização | Sistema mostra o estado da encomenda so seu produto leiloado | 
 
 ---
 
