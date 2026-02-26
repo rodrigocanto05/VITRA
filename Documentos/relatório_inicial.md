@@ -229,14 +229,14 @@ Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do
 ---
 
 ## 📜 9. Project Charter
-Project Charter: VITRA
-Vigilância Inteligente do Território e Riscos Ambientais
+Project Charter: NextBid
+
 
 **Enquadramento das Unidades Curriculares**:
 
-**Programação Web**: EO PHP será o responsável por implementar as fórmulas matemáticas e garantir que os dados geográficos (Coordenadas x,y) sejam processados e entregues ao Front-end em formato JSON para o Leaflet.
+**Programação Web**: É o PHP que será o responsável por implementar as fórmulas matemáticas e garantir que os dados geográficos (Coordenadas x,y) sejam processados e entregues ao Front-end em formato JSON para o Leaflet.
 
-**Estatística**: Análise de Tendências: Usarás estatística descritiva para mostrar ao utilizador o "Preço Médio" de produtos similares ou a "Procura" (número de licitações por hora).
+**Estatística**: Análise de Tendências: A utilização da estatística descritiva para mostrar ao utilizador o "Preço Médio" de produtos similares ou a "Procura" (número de licitações por hora).
 
 Análise de Outliers: Identificar licitações fraudulentas (bots) através de desvios padrão no tempo de resposta das licitações.
 
