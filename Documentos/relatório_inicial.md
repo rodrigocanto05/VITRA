@@ -2,7 +2,7 @@
 - Universidade: Universidade Europeia  
 - Faculdade: IADE  
 - Elementos do grupo: Rodrigo Canto, Rodrigo Daibert, Marco Fonseca e Daniel Paulo
-- Nome do projeto: 
+- Nome do projeto: NextBid
 - Repositório GitHub: https://github.com/rodrigocanto05/VITRA
   
 ---
@@ -45,151 +45,126 @@ O presente plano de trabalho organiza o desenvolvimento do sistema ao longo de 1
 
 ---
 
-## Semana 1 – Enquadramento e Definição do Projeto
-
-Definição completa das funcionalidades
-Escolha das tecnologias
-Modelação inicial das classes (UML)
-Definição das regras do leilão
-
-**Resultado:** Documento de requisitos aprovado.
+Semana 1 – Definição do Projeto
+Definição do conceito final da plataforma
+Identificação das funcionalidades principais (leilões, mapa, roleta, jogo extra)
+Definição do público-alvo
+Distribuição inicial de tarefas pelo grupo
+Objetivo: Ter o projeto totalmente definido antes de começar a desenvolver.
 
 ---
 
-## Semana 2 – Arquitetura do Sistema
-
-* Definição da arquitetura geral (sensores → servidor → base de dados → interface)
-* Escolha das tecnologias (frontend, backend, base de dados)
-* Definição do modelo de comunicação com sensores (ex.: HTTP ou MQTT)
-* Desenho do diagrama da arquitetura
-
-**Resultado:** Estrutura técnica definida.
+Semana 2 – Análise Técnica e Modelação
+Escolha das tecnologias (linguagem, base de dados, framework)
+Desenho da arquitetura do sistema
+Criação do diagrama de classes (UML)
+Definição das regras do sistema de leilão
+Objetivo: Estrutura técnica bem definida.
 
 ---
 
-## Semana 3 – Modelação da Base de Dados
-
-* Identificação das entidades principais:
-
-  * Sensores
-  * Leituras
-  * Incidentes
-  * Alertas
-  * Utilizadores
-* Criação do modelo relacional
-* Implementação inicial da base de dados
-
-**Resultado:** Base de dados estruturada e funcional.
+Semana 3 – Modelação da Base de Dados
+Criação das tabelas:
+Utilizadores
+Produtos
+Leilões
+Licitações
+Prémios
+Definição de chaves primárias e relações
+Testes iniciais de inserção de dados
+Objetivo: Base de dados funcional.
 
 ---
 
-## Semana 4 – Estrutura Inicial do Backend
-
-* Criação do servidor
-* Implementação dos primeiros endpoints da API
-* Ligação à base de dados
-* Testes iniciais de comunicação
-
-**Resultado:** Backend operacional.
+Semana 4 – Sistema de Utilizadores
+Implementação de registo
+Implementação de login
+Sistema de autenticação
+Criação de perfis de utilizador
+Objetivo: Utilizadores conseguem criar conta e aceder à plataforma.
 
 ---
 
-## Semana 5 – Receção e Processamento de Dados
+Semana 5 – Criação e Gestão de Leilões
+Implementação da criação de leilões
+Definição de preço base
+Definição de tempo de duração
+Associação de localização ao produto
+Objetivo: Sistema básico de leilões funcional.
 
-* Desenvolvimento da funcionalidade de receção de leituras
-* Validação de dados recebidos
-* Implementação de regras de deteção de risco
-* Criação automática de incidentes
-
-**Resultado:** Sistema capaz de detetar eventos críticos.
-
----
-
-## Semana 6 – Sistema de Alertas
-
-* Implementação de envio de alertas (email ou simulação)
-* Classificação de severidade (verde, amarelo, laranja, vermelho)
-* Sistema de controlo para evitar alertas repetidos
-* Histórico de notificações
-
-**Resultado:** Sistema de alertas funcional.
 
 ---
 
-## Semana 7 – Desenvolvimento do Frontend (Base)
-
-* Estrutura da interface web
-* Implementação de autenticação simples
-* Criação do painel principal (dashboard)
-* Ligação frontend–backend
-
-**Resultado:** Interface básica funcional.
-
----
-
-## Semana 8 – Mapa Interativo e Visualização
-
-* Integração de mapa interativo
-* Visualização de sensores por estado
-* Representação gráfica de incidentes ativos
-* Implementação de filtros por tipo de risco
-
-**Resultado:** Visualização geográfica do sistema.
+Semana 6 – Algoritmo de Licitação
+Implementação do algoritmo que:
+Valida novas licitações
+Atualiza o maior lance
+Guarda histórico de lances
+Garantir que o novo lance é superior ao anterior
+Objetivo: Leilões funcionam corretamente em tempo real.
 
 ---
 
-## Semana 9 – Monitorização de Cheias e Radiação (Melhorias)
-
-* Ajuste de regras específicas para cheias
-* Implementação de análise de tendência (taxa de subida)
-* Ajuste de níveis de alerta para radiação
-* Testes com cenários simulados
-
-**Resultado:** Monitorização mais precisa e realista.
+Semana 7 – Temporizador e Fecho Automático
+Implementação da contagem decrescente
+Encerramento automático do leilão
+Definição automática do vencedor
+Notificação ao vencedor
+Objetivo: Sistema completo de finalização automática.
 
 ---
 
-## Semana 10 – Módulo de Previsão de Incêndios
-
-* Implementação do cálculo simplificado de propagação
-* Integração de dados de vento (simulados)
-* Cálculo de tempo estimado até pontos críticos
-* Representação visual da área afetada
-
-**Resultado:** Sistema com previsão básica de propagação.
+Semana 8 – Integração do Mapa
+Integração de mapa interativo
+Visualização da localização do produto
+Filtro de leilões por localização
+Objetivo: Sistema geográfico funcional.
 
 ---
 
-## Semana 11 – Testes e Otimização
-
-* Testes de carga com múltiplos sensores simulados
-* Correção de erros
-* Otimização de desempenho
-* Validação da estabilidade do sistema
-
-**Resultado:** Sistema estável e otimizado.
+Semana 9 – Desenvolvimento da Roleta
+Criação da roleta digital
+Algoritmo de geração aleatória
+Definição de probabilidades
+Integração de prémios (créditos, descontos, etc.)
+Objetivo: Sistema de gamificação ativo.
 
 ---
 
-## Semana 12 – Documentação Técnica
-
-* Redação do relatório técnico
-* Inclusão de diagramas (arquitetura, base de dados, fluxo do sistema)
-* Explicação do modelo de previsão
-* Organização das evidências de testes
-
-**Resultado:** Relatório quase finalizado.
+Semana 10 – Desenvolvimento do Segundo Jogo
+(Sugestão: Quiz rápido ou jogo de memória)
+Definição das regras
+Implementação da lógica do jogo
+Sistema de pontos ou recompensas
+Integração com conta do utilizador
+Objetivo: Aumentar interação e retenção de utilizadores.
 
 ---
 
-## Semana 13 – Preparação da Apresentação Final
+Semana 11 – Interface e Experiência do Utilizador
+Melhorias visuais
+Dashboard do utilizador
+Histórico de licitações
+Página de prémios e ganhos
+Objetivo: Plataforma visualmente organizada e intuitiva.
 
-* Criação da apresentação (slides)
-* Preparação de demonstração prática
-* Simulação de cenário real (ex.: incêndio ou cheia)
-* Ensaios da apresentação
+---
 
-**Resultado:** Projeto pronto para entrega e apresentação.
+Semana 12 – Testes e Otimização
+Testes com múltiplos utilizadores
+Correção de erros
+Testes de segurança básicos
+Otimização do desempenho
+Objetivo: Sistema estável e funcional.
+
+---
+
+Semana 13 – Documentação e Apresentação
+Redação do relatório final
+Inserção de diagramas (UML e arquitetura)
+Preparação da demonstração prática
+Ensaios da apresentação
+Objetivo: Projeto pronto para avaliação.
 
 ---
 
@@ -269,7 +244,7 @@ Análise de Outliers: Identificar licitações fraudulentas (bots) através de d
 
 **Projeto de Desenvolvimento Web**: É nesta cadeira que vamos desenvolver o projeto, iremos ter acompanhamento da professora e as apresentações.
 
-**Algoritmo e Estrutura de dados**: O nosso projeto enquadra-se na cadeira de Algoritmos e Estruturas de Dados porque aplica a organização e estruturação de dados provenientes de sensores, utilizando algoritmos para processar informação e gerar alertas. Além disso, recorre a estruturas de dados e ao paradigma de programação orientada a objetos, conforme abordado nos conteúdos da unidade curricular.
+**Algoritmo e Estrutura de dados**: O projeto da plataforma de leilões online enquadra-se diretamente na unidade curricular de Algoritmos e Estruturas de Dados, uma vez que envolve a organização, armazenamento e processamento eficiente de informação dinâmica.
 
 **Interfaces e Usabilidades**: O projeto vai ser influênciado gráficamente pela cadeira de interfaces e usabilidades, representado todo o frontend, e organizando as usabilidades e a estética da interface de utilizadores, para que a mesma seja mais eficiente, e de fácil utilização, desenvolvendo temas sobre as diferentes usabilidades.
 
