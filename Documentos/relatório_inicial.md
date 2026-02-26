@@ -216,6 +216,7 @@ Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do
 | Combina compras online com elementos locais | Menor variedade de produtos leiloados |
 | Alguns usam geolocalização para entregas | Não possui caça ao tesouro ou roleta diária |
 | Interação entre vendedor e comprador | Não tem desempates decididos por sorteio |
+
 ---
 
 ## 🧪 8. Guiões de teste
@@ -229,8 +230,42 @@ Este plano de 13 semanas permite um desenvolvimento progressivo e estruturado do
 | 06 | Geolocalização do produto leiloado | Ao ganhar o utilizador vencedor tem direito a observar o estado do seu produto em tempo real atravez de um sensor de localização | Sistema mostra o estado da encomenda so seu produto leiloado | 
 
 ---
+##  📌 9. Requesitos 
 
-## 📜 9. Project Charter
+### 9.1 Requisitos Funcionais
+- Permitir registo e autenticação de utilizadores na plataforma.
+- Possibilitar a criação, edição e remoção de produtos para leilão (CRUD).
+- Permitir aos utilizadores licitar em tempo real em leilões ativos.
+- Validar que cada nova licitação é superior ao valor atual do leilão.
+- Encerrar automaticamente o leilão quando o tempo expira e definir o vencedor.
+- Resolver empates de licitação através de sorteio (moeda ao ar).
+- Apresentar histórico de licitações por produto.
+- Integrar um mapa interativo com a localização dos produtos leiloados.
+- Implementar uma roleta digital diária com prémios (créditos, descontos, etc.).
+- Disponibilizar um segundo jogo interativo com sistema de recompensas.
+- Permitir visualização do estado da encomenda através de dados de geolocalização simulados.
+- Notificar automaticamente o utilizador vencedor do leilão.
+
+### 9.2 Requisitos Não Funcionais
+- Garantir segurança na autenticação (hash de passwords e gestão de sessões).
+- Assegurar proteção contra vulnerabilidades comuns (XSS, SQL Injection).
+- Garantir desempenho adequado para múltiplos utilizadores simultâneos.
+- Disponibilizar uma interface intuitiva, responsiva e de fácil navegação.
+- Assegurar compatibilidade com os principais navegadores web modernos.
+- Garantir integridade e consistência dos dados armazenados na base de dados.
+- Implementar testes unitários para validação da lógica de licitação e saldo.
+- Assegurar escalabilidade modular da aplicação (frontend, backend e módulos de jogo).
+
+### 9.3 Requisitos de Sistema
+- Servidor web com suporte a PHP.
+- Base de dados relacional (ex.: MySQL ou MariaDB).
+- Navegador web moderno com suporte a JavaScript e Fetch API.
+- Integração com biblioteca Leaflet.js para funcionalidades de geolocalização.
+- Ambiente de desenvolvimento com suporte a controlo de versões (Git/GitHub).
+
+---
+
+## 📜 10. Project Charter
 Project Charter: NextBid
 
 
@@ -253,44 +288,55 @@ Análise de Outliers: Identificar licitações fraudulentas (bots) através de d
 
 ---
 
-## 🏗️ 10. WBS (Work Breakdown Structure)
-1) Gestão do Projeto
-   1.1 - Documentação técnica e Project Charter.
-   1.2 - Planeamento de Sprint e prazos.
-2) Desenvolvimento Core
-   2.1 - Configuração do ambiente e Router em PHP.
-   2.2 - Motor de Autenticação (Sessions & Password Hashing).
-3) Módulo de Leilões
-   3.1 - CRUD de Produtos.
-   3.2 - Lógica de Licitação e Cronómetros (AJAX).
-4) Backend (PHP)
-   4.1 - Conexão DB e Script simulador de sensores - API de Dados (JSON)
-5) Frontend:
-   5.1 - Layout HTML/CSS 
-6) Módulo Casino:
-   6.1 - Algoritmos de Slots e Roleta.
-   6.2 - Flip Coin e outros possiveis métodos
-7) Integração
-   7.1 - Consumo de dados via Fetch e Lógica 
-8) Módulo SIG (Geosocial)
-   8.1 - Integração com Leaflet.js.
-   8.2 - Geocodificação de endereços de vendedores.
-9) Segurança e Testes
-    9.1 - Sanitização de inputs e prevenção de XSS/SQLi.
-    9.2 - Testes unitários de lógica de saldo.
+## 🏗️ 11. WBS (Work Breakdown Structure)
+# Estrutura do Projeto
+
+## 1. Gestão do Projeto
+### 1.1 - Documentação técnica e Project Charter
+### 1.2 - Planeamento de Sprint e prazos
+
+## 2. Desenvolvimento Core
+### 2.1 - Configuração do ambiente e Router em PHP
+### 2.2 - Motor de Autenticação (Sessions & Password Hashing)
+
+## 3. Módulo de Leilões
+### 3.1 - CRUD de Produtos
+### 3.2 - Lógica de Licitação e Cronómetros (AJAX)
+
+## 4. Backend (PHP)
+### 4.1 - Conexão DB e Script simulador de sensores - API de Dados (JSON)
+
+## 5. Frontend
+### 5.1 - Layout HTML/CSS 
+
+## 6. Módulo Casino
+### 6.1 - Algoritmos de Slots e Roleta
+### 6.2 - Flip Coin e outros possíveis métodos
+
+## 7. Integração
+### 7.1 - Consumo de dados via Fetch e Lógica 
+
+## 8. Módulo SIG (Geosocial)
+### 8.1 - Integração com Leaflet.js
+### 8.2 - Geocodificação de endereços de vendedores
+
+## 9. Segurança e Testes
+### 9.1 - Sanitização de inputs e prevenção de XSS/SQLi
+### 9.2 - Testes unitários de lógica de saldo
 
 ---
 
-## 🏁 11. Conclusão
-**O projeto VITRA** –> Vigilância Inteligente do Território e Riscos Ambientais valida a eficácia da integração entre sensores IoT e algoritmos inteligentes na mitigação de catástrofes naturais. Através da monitorização contínua e do processamento de dados em tempo real, o sistema converte métricas brutas em conhecimento estratégico para a Proteção Civil e autoridades locais.
+## 🏁 12. Conclusão
 
-**Impacto Principal:** A plataforma elimina a fragmentação de sistemas ao unificar a gestão de riscos distintos — cheias, incêndios e radiação — num interface único, permitindo uma resposta operacional significativamente mais rápida e coordenada.
+O projeto **NextBid** propõe o desenvolvimento de uma plataforma web de leilões online, que combina mecanismos tradicionais de licitação com funcionalidades de gamificação e geolocalização, criando uma experiência interativa, competitiva e centrada no utilizador. Ao integrar algoritmos de licitação em tempo real, sistemas de autenticação segura, mapas interativos e jogos como roleta e moeda ao ar, a plataforma pretende diferenciar-se das soluções existentes no mercado.
 
-**Em suma:** O VITRA afirma-se como uma ferramenta essencial para a resiliência do território. O sucesso deste protótipo prova que a antecipação baseada em dados não é apenas uma vantagem tecnológica, mas a estratégia fundamental para garantir a segurança pública no futuro.
+A arquitetura definida, baseada em PHP, base de dados relacional e consumo de dados em formato JSON, garante uma estrutura modular, escalável e adequada ao contexto académico do projeto. A divisão do desenvolvimento em fases semanais permite uma evolução progressiva e controlada, assegurando que cada componente — desde a gestão de utilizadores até à integração SIG com Leaflet.js — seja implementado, testado e otimizado de forma estruturada.
+
+Do ponto de vista académico, o projeto enquadra-se diretamente nas unidades curriculares de Programação Web, Algoritmos e Estruturas de Dados, Sistemas de Informação Geográfica, Estatística e Interfaces e Usabilidade, aplicando conceitos teóricos num cenário prático e comercial. Esta integração multidisciplinar demonstra a capacidade de conceber e desenvolver uma solução tecnológica completa, funcional e alinhada com os objetivos pedagógicos do curso.
 
 ---
 
-## 📚 12. Bibliografia
+## 📚 13. Bibliografia
 
 eBay. (n.d.). *eBay: Buy & Sell Electronics, Cars, Fashion, Collectibles & More*. https://www.ebay.com
 
