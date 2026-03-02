@@ -1,6 +1,6 @@
 # Tarefas Individuais
 
-Durante o desenvolvimento do projeto **NextBid**, fiquei responsável por várias componentes centrais relacionadas com a organização funcional do sistema e a experiência do utilizador. As minhas principais áreas de intervenção foram o **Plano de Trabalho**, os **Requisitos Funcionais e Não Funcionais**, a definição de **Personas, User Journey e User Research**, e ainda a componente de **Interface e Usabilidade**.
+Durante o desenvolvimento do projeto **NextBid**, fiquei responsável por várias componentes centrais relacionadas com a organização funcional do sistema e a experiência do utilizador. As minhas principais áreas de intervenção foram o **Plano de Trabalho**, os **Requisitos Funcionais e Não Funcionais**, e ainda a componente de **Interface e Usabilidade**.
 
 Relativamente ao plano de trabalho, organizei o desenvolvimento do projeto ao longo das diferentes semanas, estruturando as fases desde a definição inicial do conceito até à implementação, testes e apresentação final. Esta organização permitiu acompanhar a evolução do projeto de forma progressiva e controlada, garantindo uma melhor gestão de prazos, qualidade técnica e distribuição equilibrada das tarefas dentro da equipa.
 
