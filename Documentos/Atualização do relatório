@@ -47,7 +47,7 @@ O presente plano de trabalho organiza o desenvolvimento do sistema ao longo de 1
 
 Semana 1 – Definição do Projeto
 Definição do conceito final da plataforma
-Identificação das funcionalidades principais (leilões, mapa, roleta, jogo extra)
+Identificação das funcionalidades principais (leilões, mapa, caça ao tesouro)
 Definição do público-alvo
 Distribuição inicial de tarefas pelo grupo
 Objetivo: Ter o projeto totalmente definido antes de começar a desenvolver.
@@ -123,10 +123,8 @@ Objetivo: Sistema geográfico funcional.
 ---
 
 Semana 9 – Desenvolvimento da Caça ou tesouro
-Criação da roleta digital
 Algoritmo de geração aleatória
 Definição de probabilidades
-Integração de prémios (créditos, descontos, etc.)
 Objetivo: Sistema de gamificação ativo.
 
 ---
