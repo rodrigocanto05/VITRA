@@ -1,0 +1,73 @@
+#categories
+
+insert into categories (cat_name) values ('Eletrónica');          # cat_id = 1
+insert into categories (cat_name) values ('Moda');                # cat_id = 2
+insert into categories (cat_name) values ('Casa');                # cat_id = 3
+insert into categories (cat_name) values ('Desporto');            # cat_id = 4
+insert into categories (cat_name) values ('Colecionáveis');       # cat_id = 5
+insert into categories (cat_name) values ('Videojogos');          # cat_id = 6
+insert into categories (cat_name) values ('Automóveis');          # cat_id = 7
+insert into categories (cat_name) values ('Livros');              # cat_id = 8
+
+
+#users
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Rodrigo Canto', 'rodrigocanto@hotmail.com', 'canto', 'M', 20, 'rodrigo_canto.jpg', 'Estudante e fã de tecnologia.', 120, 'seller', str_to_date('2025.10.20','%Y.%m.%d'));        # usr_id = 1
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Rodrigo Daibert', 'rodrigodaibert@hotmail.com', '1234', 'M', 20, 'rodrigo_daibert.jpg', 'Gosto de leilões e gaming.', 95, 'buyer', str_to_date('2025.10.22','%Y.%m.%d'));       # usr_id = 2
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Marco Fonseca', 'mf2006@gmail.com', 'hash1', 'M', 19, 'marco_fonseca.jpg', 'Colecionador e vendedor ocasional.', 180, 'seller', str_to_date('2025.10.24','%Y.%m.%d'));            # usr_id = 3
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Luis Quirim', 'luisquirim@gmail.com', 'hash1', 'M', 21, 'luis_quirim.jpg', 'Interesso-me por artigos para casa e carros.', 60, 'buyer', str_to_date('2025.10.28','%Y.%m.%d'));    # usr_id = 4
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Sandra Estrela', 'sandra@hotmail.com', 'hash1', 'F', 22, 'sandra_estrela.jpg', 'Adoro moda e decoração.', 140, 'seller', str_to_date('2025.10.30','%Y.%m.%d'));                 # usr_id = 5
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Daniel Paulo', 'dexpaulo@hotmail.com', 'hash1', 'M', 20, 'daniel_paulo.jpg', 'Utilizador ativo na plataforma.', 75, 'buyer', str_to_date('2025.11.01','%Y.%m.%d'));               # usr_id = 6
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Jocy Grangeiro', 'jocy12@gmail.com', 'hash1', 'F', 21, 'jocy_grangeiro.jpg', 'Gosto de oportunidades e prémios.', 110, 'buyer', str_to_date('2025.11.04','%Y.%m.%d'));            # usr_id = 7
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Paulo Alberto', 'pauloencomendas@gmail.com', 'hash1', 'M', 24, 'paulo_alberto.jpg', 'Interessa-me eletrónica e desporto.', 90, 'buyer', str_to_date('2025.11.09','%Y.%m.%d'));     # usr_id = 8
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Patricia Daibert', 'patriciadaibert@hotmail.com', 'hash1', 'F', 23, 'patricia_daibert.jpg', 'Procuro artigos de moda e casa.', 130, 'buyer', str_to_date('2025.11.13','%Y.%m.%d')); # usr_id = 9
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Martim Fonseca', 'mrmartim@hotmail.com', 'hash1', 'M', 19, 'martim_fonseca.jpg', 'Curioso por videojogos e gadgets.', 55, 'buyer', str_to_date('2025.12.01','%Y.%m.%d'));          # usr_id = 10
+
+insert into users (usr_name, usr_email, usr_password, usr_gender, usr_age, usr_photo, usr_bio, usr_xp, usr_role, usr_created_at)
+values ('Tomas Lebre', 'tomaslebre@gmail.com', 'hash1', 'M', 20, 'tomas_lebre.jpg', 'Participante frequente em leilões.', 70, 'buyer', str_to_date('2025.12.02','%Y.%m.%d'));               # usr_id = 11
+
+
+#products
+
+insert into products (prd_name, prd_description, prd_cat_id, prd_usr_id, prd_condition, prd_start_price, prd_location, prd_latitude, prd_longitude, prd_status, prd_ends_at, prd_created_at)
+values ('iPhone 13', 'iPhone 13 em excelente estado, 128GB.', 1, 1, 'used', 450.00, 'Lisboa', 38.7223000, -9.1393000, 'active', str_to_date('2025.12.20','%Y.%m.%d'), str_to_date('2025.12.10','%Y.%m.%d'));   # prd_id = 1
+
+insert into products (prd_name, prd_description, prd_cat_id, prd_usr_id, prd_condition, prd_start_price, prd_location, prd_latitude, prd_longitude, prd_status, prd_ends_at, prd_created_at)
+values ('PlayStation 5', 'Consola PS5 com comando incluído.', 6, 3, 'used', 380.00, 'Almada', 38.6800000, -9.1580000, 'active', str_to_date('2025.12.21','%Y.%m.%d'), str_to_date('2025.12.11','%Y.%m.%d'));    # prd_id = 2
+
+insert into products (prd_name, prd_description, prd_cat_id, prd_usr_id, prd_condition, prd_start_price, prd_location, prd_latitude, prd_longitude, prd_status, prd_ends_at, prd_created_at)
+values ('Casaco de Pele', 'Casaco em muito bom estado, tamanho M.', 2, 5, 'used', 60.00, 'Porto', 41.1579000, -8.6291000, 'active', str_to_date('2025.12.22','%Y.%m.%d'), str_to_date('2025.12.12','%Y.%m.%d')); # prd_id = 3
+
+insert into products (prd_name, prd_description, prd_cat_id, prd_usr_id, prd_condition, prd_start_price, prd_location, prd_latitude, prd_longitude, prd_status, prd_ends_at, prd_created_at)
+values ('Bicicleta BTT', 'Bicicleta de montanha com pouco uso.', 4, 1, 'used', 150.00, 'Braga', 41.5454000, -8.4265000, 'active', str_to_date('2025.12.24','%Y.%m.%d'), str_to_date('2025.12.12','%Y.%m.%d'));   # prd_id = 4
+
+insert into products (prd_name, prd_description, prd_cat_id, prd_usr_id, prd_condition, prd_start_price, prd_location, prd_latitude, prd_longitude, prd_status, prd_ends_at, prd_created_at)
+values ('Relógio Vintage', 'Relógio colecionável dos anos 80.', 5, 3, 'used', 90.00, 'Coimbra', 40.2033000, -8.4103000, 'active', str_to_date('2025.12.23','%Y.%m.%d'), str_to_date('2025.12.13','%Y.%m.%d'));  # prd_id = 5
+
+insert into products (prd_name, prd_description, prd_cat_id, prd_usr_id, prd_condition, prd_start_price, prd_location, prd_latitude, prd_longitude, prd_status, prd_ends_at, prd_created_at)
+values ('Mesa de Jantar', 'Mesa de madeira para 6 pessoas.', 3, 5, 'used', 120.00, 'Setúbal', 38.5244000, -8.8882000, 'active', str_to_date('2025.12.26','%Y.%m.%d'), str_to_date('2025.12.14','%Y.%m.%d'));     # prd_id = 6
+
+insert into products (prd_name, prd_description, prd_cat_id, prd_usr_id, prd_condition, prd_start_price, prd_location, prd_latitude, prd_longitude, prd_status, prd_ends_at, prd_created_at)
+values ('Livro Java', 'Livro técnico de programação em Java.', 8, 1, 'new', 25.00, 'Aveiro', 40.6405000, -8.6538000, 'active', str_to_date('2025.12.27','%Y.%m.%d'), str_to_date('2025.12.15','%Y.%m.%d'));      # prd_id = 7
+
+insert into products (prd_name, prd_description, prd_cat_id, prd_usr_id, prd_condition, prd_start_price, prd_location, prd_latitude, prd_longitude, prd_status, prd_ends_at, prd_created_at)
+values ('Jantes 18 Polegadas', 'Conjunto de 4 jantes em bom estado.', 7, 3, 'used', 300.00, 'Sintra', 38.8029000, -9.3817000, 'active', str_to_date('2025.12.
