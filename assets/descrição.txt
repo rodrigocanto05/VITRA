@@ -1,0 +1,1 @@
+CSS, JS e imagens (incluindo o caminho da galeria de produtos).

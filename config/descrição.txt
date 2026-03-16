@@ -1,0 +1,1 @@
+Ficheiros de ligação à base de dados e definições globais.

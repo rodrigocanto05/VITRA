@@ -1,0 +1,1 @@
+Scripts PHP que processam os dados (login, licitações, localização) e devolvem JSON.
