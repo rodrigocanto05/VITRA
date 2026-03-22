@@ -4,6 +4,7 @@ create table users (
     usr_id         int not null auto_increment,
     usr_name       varchar(80) not null,              # user name
     usr_email      varchar(120) not null,             # user email
+    usr_token      VARCHAR(255) NULL AFTER usr_password;
     usr_password   varchar(200) not null,
     usr_gender     char(1) not null,
     usr_age        int not null,
@@ -53,8 +54,8 @@ create table bids (
     bid_usr_id      int not null,                     # FK to users
     bid_amount      decimal(10,2) not null,
     bid_created_at  datetime not null default current_timestamp,
-    primary key (bid_id)
-);
+    primary key (bid_id),
+    INDEX idx_bids_prd_id ON bids(bid_prd_id););
 
 create table gamification (
     gme_id           int not null auto_increment,
