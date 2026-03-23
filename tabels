@@ -4,8 +4,8 @@ create table users (
     usr_id         int not null auto_increment,
     usr_name       varchar(80) not null,              # user name
     usr_email      varchar(120) not null,             # user email
-    usr_token      VARCHAR(255) NULL AFTER usr_password;
     usr_password   varchar(200) not null,
+    usr_token      varchar(255) null,
     usr_gender     char(1) not null,
     usr_age        int not null,
     usr_photo      varchar(255),
@@ -15,6 +15,13 @@ create table users (
     usr_created_at datetime not null default current_timestamp,
     primary key (usr_id),
     unique key uq_users_email (usr_email)
+);
+
+create table categories (
+    cat_id      int not null auto_increment,
+    cat_name    varchar(80) not null,
+    primary key (cat_id),
+    unique key uq_categories_name (cat_name)
 );
 
 create table products (
@@ -41,13 +48,6 @@ create table product_images (
     primary key (img_id)
 );
 
-create table categories (
-    cat_id      int not null auto_increment,
-    cat_name    varchar(80) not null,
-    primary key (cat_id),
-    unique key uq_categories_name (cat_name)
-);
-
 create table bids (
     bid_id          int not null auto_increment,
     bid_prd_id      int not null,                     # FK to products
@@ -55,7 +55,8 @@ create table bids (
     bid_amount      decimal(10,2) not null,
     bid_created_at  datetime not null default current_timestamp,
     primary key (bid_id),
-    INDEX idx_bids_prd_id ON bids(bid_prd_id););
+    index idx_bids_prd_id (bid_prd_id)
+);
 
 create table gamification (
     gme_id           int not null auto_increment,
@@ -81,38 +82,37 @@ create table gamification_claims (
 
 -- Foreign Keys
 
-
 alter table products
 add constraint products_fk_user
 foreign key (prd_usr_id) references users(usr_id)
-ON DELETE NO ACTION ON UPDATE NO ACTION;
+on delete no action on update no action;
 
 alter table product_images
 add constraint product_images_fk_product
 foreign key (img_prd_id) references products(prd_id)
-ON DELETE CASCADE ON UPDATE NO ACTION;
+on delete cascade on update no action;
 
 alter table products
 add constraint products_fk_category
 foreign key (prd_cat_id) references categories(cat_id)
-ON DELETE NO ACTION ON UPDATE NO ACTION;
+on delete no action on update no action;
 
 alter table bids
 add constraint bids_fk_product
 foreign key (bid_prd_id) references products(prd_id)
-ON DELETE CASCADE ON UPDATE NO ACTION;
+on delete cascade on update no action;
 
 alter table bids
 add constraint bids_fk_user
 foreign key (bid_usr_id) references users(usr_id)
-ON DELETE NO ACTION ON UPDATE NO ACTION;
+on delete no action on update no action;
 
 alter table gamification_claims
 add constraint gamification_claims_fk_gamification
 foreign key (gcl_gme_id) references gamification(gme_id)
-ON DELETE CASCADE ON UPDATE NO ACTION;
+on delete cascade on update no action;
 
 alter table gamification_claims
 add constraint gamification_claims_fk_user
 foreign key (gcl_usr_id) references users(usr_id)
-ON DELETE CASCADE ON UPDATE NO ACTION;
+on delete cascade on update no action;
