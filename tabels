@@ -5,7 +5,6 @@ create table users (
     usr_name       varchar(80) not null,              # user name
     usr_email      varchar(120) not null,             # user email
     usr_password   varchar(200) not null,
-    usr_token      varchar(255) null,
     usr_gender     char(1) not null,
     usr_age        int not null,
     usr_photo      varchar(255),
