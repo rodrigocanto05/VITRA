@@ -70,7 +70,7 @@ create table gamification (
     primary key (gme_id)
 );
 
-create table gamification_claims (
+create table gamification_claim (
     gcl_id           int not null auto_increment,
     gcl_gme_id       int not null,                    # FK to gamification
     gcl_usr_id       int not null,                    # FK to users
@@ -83,35 +83,35 @@ create table gamification_claims (
 
 alter table products
 add constraint products_fk_user
-foreign key (prd_usr_id) references users(usr_id)
+foreign key (prd_usr_id) references user(usr_id)
 on delete no action on update no action;
 
 alter table product_images
 add constraint product_images_fk_product
-foreign key (img_prd_id) references products(prd_id)
+foreign key (img_prd_id) references product(prd_id)
 on delete cascade on update no action;
 
-alter table products
+alter table product
 add constraint products_fk_category
-foreign key (prd_cat_id) references categories(cat_id)
+foreign key (prd_cat_id) references categorie(cat_id)
 on delete no action on update no action;
 
-alter table bids
+alter table bid
 add constraint bids_fk_product
-foreign key (bid_prd_id) references products(prd_id)
+foreign key (bid_prd_id) references product(prd_id)
 on delete cascade on update no action;
 
-alter table bids
+alter table bid
 add constraint bids_fk_user
-foreign key (bid_usr_id) references users(usr_id)
+foreign key (bid_usr_id) references user(usr_id)
 on delete no action on update no action;
 
 alter table gamification_claims
-add constraint gamification_claims_fk_gamification
+add constraint gamification_claim_fk_gamification
 foreign key (gcl_gme_id) references gamification(gme_id)
 on delete cascade on update no action;
 
 alter table gamification_claims
-add constraint gamification_claims_fk_user
-foreign key (gcl_usr_id) references users(usr_id)
+add constraint gamification_claim_fk_user
+foreign key (gcl_usr_id) references user(usr_id)
 on delete cascade on update no action;
